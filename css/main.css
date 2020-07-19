@@ -970,3 +970,55 @@ h2 {
   margin-right: auto;
   padding: 20px;
 }
+.form-field {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form-field input {
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+.form-field label {
+  margin-bottom: 5px;
+}
+.form-field input::placeholder {
+  color: #2a2a2a;
+}
+.group {
+  margin-bottom: 20px;
+}
+
+.group-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.topic-options li {
+  display: flex;
+  align-items: center;
+}
+.topic-options {
+  margin: 0;
+  padding: 0;
+}
+.topic-options input[type='checkbox'] {
+}
+.topic-options label {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.experiens-options {
+}
+
+.date {
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 20px 40px;
+}
+.comment {
+  padding: 8px;
+}

@@ -93,41 +93,93 @@
         </div>
         <div class="form-field">
           <label for="tel" class="form-lable">Телефон</label>
-          <input class="form-input" type="tel" name="tel" id="tel" />
+          <input
+            class="form-input"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="+38 000 00 00 000"
+          />
         </div>
         <div class="form-field">
           <label class="form-lable" for="mail">Почта</label>
-          <input class="form-input" type="email" name="mail" id="mail" />
+          <input
+            class="form-input"
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="my@mail.com"
+          />
         </div>
 
-        <div role="group">
-          <input type="checkbox" name="topic" value="html" id="html" />
-          <label for="html">HTML</label>
-          <input type="checkbox" name="topic" value="css" id="css" />
-          <label for="css">CSS</label>
-          <input type="checkbox" name="topic" value="js" id="js" />
-          <label for="js">JavaScript</label>
+        <div role="group" class="group">
+          <h2 class="group-title">Тема доклада</h2>
+          <ul class="topic-options">
+            <li>
+              <input type="checkbox" name="topic" value="html" id="html" />
+              <label for="html">HTML</label>
+            </li>
+            <li>
+              <input type="checkbox" name="topic" value="css" id="css" />
+              <label for="css">CSS</label>
+            </li>
+            <li>
+              <input type="checkbox" name="topic" value="js" id="js" />
+              <label for="js">JavaScript</label>
+            </li>
+          </ul>
         </div>
-        <div role="group">
-          <input type="radio" name="experience" value="junior" id="junior" />
-          <label for="junior">junior</label>
-          <input type="radio" name="experience" value="middle" id="middle" />
-          <label for="middle">middle</label>
-          <input type="radio" name="experience" value="senior" id="senior" />
-          <label for="senior">senior</label>
+        <div role="group" class="group">
+          <h2 class="group-title">Уровень вашей экспертизы</h2>
+          <ul class="experiens-options">
+            <li>
+              <input
+                type="radio"
+                name="experience"
+                value="junior"
+                id="junior"
+              />
+              <label for="junior">junior</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="experience"
+                value="middle"
+                id="middle"
+              />
+              <label for="middle">middle</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="experience"
+                value="senior"
+                id="senior"
+              />
+              <label for="senior">senior</label>
+            </li>
+          </ul>
         </div>
-        <label for="date">Дата доклада</label>
-        <input type="datetime-local" name="date" id="date" />
+        <div class="form-field">
+          <label for="date">Дата доклада</label>
+          <input type="datetime-local" name="date" id="date" class="date" />
+        </div>
+        <div class="form-field">
+          <label for="pdf">загрузите файлы доклада</label>
+          <input type="file" name="pdf" id="pdf" />
+        </div>
 
-        <label for="pdf">загрузите файлы доклада</label>
-        <input type="file" name="pdf" id="pdf" />
-
-        <br />
-        <label for="comment">оставьте коментарий</label>
-        <textarea name="comment" id="comment" rows="10"></textarea>
-        <br />
-        <input type="checkbox" name="policy" id="policy" />
-        <label for="policy">соглашаюсь на все за еду</label>
+        <div class="form-field">
+          <label for="comment">оставьте коментарий</label>
+          <textarea name="comment" id="comment" rows="10" class="comment">
+Уточните детали доклада</textarea
+          >
+        </div>
+        <div class="form-field">
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy">соглашаюсь на все за еду</label>
+        </div>
 
         <button type="submit">Оставить заявку</button>
       </form>
