@@ -963,3 +963,10 @@ h2 {
   transition: transform var(--animation-duration)
     var(--animation-timing-function);
 }
+.form {
+  width: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}

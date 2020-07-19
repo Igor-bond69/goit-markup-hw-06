@@ -79,21 +79,55 @@
         </div>
       </section>
 
-      <form class="js-speaker-form">
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" />
+      <form class="form js-speaker-form">
+        <div class="form-field">
+          <label for="name" class="form-label">Имя</label>
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Иван Иваныч"
+            autofocus
+          />
+        </div>
+        <div class="form-field">
+          <label for="tel" class="form-lable">Телефон</label>
+          <input class="form-input" type="tel" name="tel" id="tel" />
+        </div>
+        <div class="form-field">
+          <label class="form-lable" for="mail">Почта</label>
+          <input class="form-input" type="email" name="mail" id="mail" />
+        </div>
 
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" />
+        <div role="group">
+          <input type="checkbox" name="topic" value="html" id="html" />
+          <label for="html">HTML</label>
+          <input type="checkbox" name="topic" value="css" id="css" />
+          <label for="css">CSS</label>
+          <input type="checkbox" name="topic" value="js" id="js" />
+          <label for="js">JavaScript</label>
+        </div>
+        <div role="group">
+          <input type="radio" name="experience" value="junior" id="junior" />
+          <label for="junior">junior</label>
+          <input type="radio" name="experience" value="middle" id="middle" />
+          <label for="middle">middle</label>
+          <input type="radio" name="experience" value="senior" id="senior" />
+          <label for="senior">senior</label>
+        </div>
+        <label for="date">Дата доклада</label>
+        <input type="datetime-local" name="date" id="date" />
 
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail" />
+        <label for="pdf">загрузите файлы доклада</label>
+        <input type="file" name="pdf" id="pdf" />
+
         <br />
-        <input type="checkbox" name="" value="html" id="html" />
-        <label for="html">HTML</label>
-
-        <input type="checkbox" name="" value="css" id="css" />
-        <label for="css">CSS</label>
+        <label for="comment">оставьте коментарий</label>
+        <textarea name="comment" id="comment" rows="10"></textarea>
+        <br />
+        <input type="checkbox" name="policy" id="policy" />
+        <label for="policy">соглашаюсь на все за еду</label>
 
         <button type="submit">Оставить заявку</button>
       </form>
