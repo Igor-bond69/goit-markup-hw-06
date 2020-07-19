@@ -72,10 +72,31 @@
               Эффективные решения<br />
               для вашего бизнеса
             </h1>
-            <button class="btn" type="button">Заказать услугу</button>
+            <button class="btn" data-open-modal>
+              Заказать услугу
+            </button>
           </div>
         </div>
       </section>
+
+      <form class="js-speaker-form">
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" />
+
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail" />
+        <br />
+        <input type="checkbox" name="" value="html" id="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="" value="css" id="css" />
+        <label for="css">CSS</label>
+
+        <button type="submit">Оставить заявку</button>
+      </form>
 
       <!-- advantages -->
 
@@ -465,10 +486,51 @@
           </button>
         </div>
       </div>
-      <div class="backdrop">
-        <div class="modal"></div>
+
+      <div class="backdrop is-hidden" data-backdrop="">
+        <div class="modal">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            reiciendis, dignissimos perferendis ea consequuntur, quas fuga
+            facere et maxime consectetur delectus ut. Iure neque, est
+            consectetur ipsa delectus necessitatibus repellat?
+          </p>
+          <button data-close-modal>Закрыть модалку</button>
+        </div>
       </div>
     </footer>
-    >
+
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector('[data-open-modal]'),
+        closeModalBtn: document.querySelector('[data-close-modal]'),
+        backdrop: document.querySelector('[data-backdrop]'),
+      };
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+      refs.backdrop.addEventListener('click', logBackdropClick);
+      function toggleModal() {
+        refs.backdrop.classList.toggle('is-hidden');
+      }
+      function logBackdropClick() {
+        console.log('Это клик в бекдроп');
+      }
+    </script>
+
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
