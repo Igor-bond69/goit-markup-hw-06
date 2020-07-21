@@ -25,7 +25,7 @@ html {
 
 body {
   margin: 0;
-  padding-top: 80px;
+  padding-top: 0;
 
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -724,7 +724,7 @@ img {
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 28px;
-  margin-top: 30px;
+  margin-top: 36px;
   font-weight: bold;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -915,18 +915,14 @@ h2 {
 .subscription {
   display: flex;
   width: 570px;
-  padding-right: 275px;
   padding-top: 72px;
   padding-bottom: 94px;
 }
 
 .mailing {
   width: 219px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
