@@ -987,10 +987,9 @@ h2 {
 }
 .form-lable {
   position: absolute;
-  left: 50%;
-  top: 30px;
+  left: 45px;
+  top: 12px;
   background-color: teal;
-  transform: translateY(-50%);
 }
 
 .form-input {
