@@ -1001,8 +1001,9 @@ h2 {
   border: 1px solid #2a2a2a;
 }
 
-.form-input:focus + .form-lable {
+.form-input:focus + .form-label {
   color: brown;
+  transform: translate(-32px, -31px);
 }
 
 .group {
