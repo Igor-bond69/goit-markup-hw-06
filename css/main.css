@@ -1030,8 +1030,23 @@ h2 {
 }
 
 .group-title {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  width: 370px;
+  height: 60px;
+  left: 199px;
+  top: 248px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .topic-options li {
