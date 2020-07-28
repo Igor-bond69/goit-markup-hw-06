@@ -1025,6 +1025,18 @@ h2 {
   background-color: #2196f3;
 } */
 
+.icon-check {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: tomato;
+}
+.checkbox:checked + .icon {
+  background-color: var(--accent-color);
+}
+.label {
+  display: block;
+}
 .group {
   margin-bottom: 20px;
 }
