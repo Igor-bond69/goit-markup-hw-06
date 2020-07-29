@@ -77,120 +77,66 @@
             </button>
           </div>
         </div>
+        <div class="backdrop is-hidden" data-backdrop="">
+          <div class="modal">
+            <form class="form js-speaker-form" autocomplete="off">
+              <h2 class="group-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder=" "
+                />
+                <span class="form-label">Имя</span>
+                <span class="icon"></span>
+              </label>
+
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="tel"
+                  placeholder=" "
+                />
+                <span class="form-label">Телефон</span>
+                <span class="icon"></span>
+              </label>
+
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="email"
+                  name="mail"
+                  placeholder=" "
+                />
+                <span class="form-label">Почта</span>
+                <span class="icon"></span>
+              </label>
+
+              <label class="field">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="topic"
+                  value="html"
+                  id="html"
+                />
+                <span class="icon-check"></span>
+                <span class="label"
+                  >Cоглашаюсь c рассылкой принимаю условия договора
+                </span>
+                <a href="">Условия договора</a>
+              </label>
+
+              <button type="submit">Оставить заявку</button>
+            </form>
+            <button data-close-modal>Закрыть модалку</button>
+          </div>
+        </div>
       </section>
-
-      <form class="form js-speaker-form" autocomplete="off">
-        <h2 class="group-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <label class="form-field">
-          <input class="form-input" type="text" name="name" placeholder=" " />
-          <span class="form-label">Имя</span>
-          <span class="icon"></span>
-        </label>
-
-        <label class="form-field">
-          <input class="form-input" type="tel" name="tel" placeholder=" " />
-          <span class="form-label">Телефон</span>
-          <span class="icon"></span>
-        </label>
-
-        <label class="form-field">
-          <input class="form-input" type="email" name="mail" placeholder=" " />
-          <span class="form-label">Почта</span>
-          <span class="icon"></span>
-        </label>
-
-        <!-- <ul class="topic-options">
-          <li>
-            <label class="label">
-              <input
-                class="checkbox"
-                type="checkbox"
-                name="topic"
-                value="html"
-                id="html"
-              />
-              <span class="icon-check"></span>
-              HTML
-            </label>
-          </li>
-          <li>
-            <label class="checkbox-label">
-              <input type="checkbox" name="topic" value="css" id="css" />
-              CSS
-            </label>
-          </li>
-          <li>
-            <label class="checkbox-label">
-              <input type="checkbox" name="topic" value="js" id="js" />
-              JavaScript</label
-            >
-          </li>
-        </ul>
-
-        <div role="group" class="group">
-          <h2 class="group-title">Уровень вашей экспертизы</h2>
-          <ul class="experiens-options">
-            <li>
-              <input
-                type="radio"
-                name="experience"
-                value="junior"
-                id="junior"
-              />
-              <label for="junior">junior</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="experience"
-                value="middle"
-                id="middle"
-              />
-              <label for="middle">middle</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="experience"
-                value="senior"
-                id="senior"
-              />
-              <label for="senior">senior</label>
-            </li>
-          </ul>
-        </div>
-        <div class="form-field">
-          <label for="date">Дата доклада</label>
-          <input type="datetime-local" name="date" id="date" class="date" />
-        </div>
-        <div class="form-field">
-          <label for="pdf">загрузите файлы доклада</label>
-          <input type="file" name="pdf" id="pdf" />
-        </div> -->
-
-        <!-- 
-        <div class="form-field">
-          <label for="comment">оставьте коментарий</label>
-          <textarea name="comment" id="comment" rows="10" class="comment">
-Уточните детали доклада</textarea>
-         -->
-        <label class="field">
-          <input
-            class="checkbox"
-            type="checkbox"
-            name="topic"
-            value="html"
-            id="html"
-          />
-          <span class="icon-check"></span>
-          <span class="label"
-            >Cоглашаюсь c рассылкой принимаю условия договора
-          </span>
-          <a href="">Условия договора</a>
-        </label>
-
-        <button type="submit">Оставить заявку</button>
-      </form>
 
       <!-- advantages -->
 
@@ -578,18 +524,6 @@
               <use href="./images/sprite.svg#icon-icon-send"></use>
             </svg>
           </button>
-        </div>
-      </div>
-
-      <div class="backdrop is-hidden" data-backdrop="">
-        <div class="modal">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            reiciendis, dignissimos perferendis ea consequuntur, quas fuga
-            facere et maxime consectetur delectus ut. Iure neque, est
-            consectetur ipsa delectus necessitatibus repellat?
-          </p>
-          <button data-close-modal>Закрыть модалку</button>
         </div>
       </div>
     </footer>

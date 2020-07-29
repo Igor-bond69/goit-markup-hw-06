@@ -50,7 +50,9 @@ img {
 .btn {
   display: inline-block;
   position: absolute;
-  left: 500px;
+  left: 284px;
+  right: 284px;
+
   width: 200px;
   height: 50px;
 
@@ -937,6 +939,7 @@ h2 {
   background-color: rgba(255, 165, 0, 0.5);
   opacity: 1;
   transition: opacity var(--animation-duration) var(--animation-timing-function);
+  z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -952,8 +955,8 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 300px;
-  min-width: 400px;
+  min-height: 609px;
+  min-width: 450px;
   padding: 15px;
   background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
@@ -1014,11 +1017,12 @@ h2 {
 }
 .icon {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 16px;
   display: inline-block;
   width: 18px;
   height: 18px;
+  transform: translateY(-50%);
   background-color: tomato;
 }
 /* .form-input:focus ~ .icon {
@@ -1078,13 +1082,14 @@ h2 {
 }
 
 .group-title {
+  margin-top: 40px;
+  margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 30px;
   width: 370px;
   height: 60px;
   left: 199px;
   top: 248px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
