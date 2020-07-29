@@ -1029,13 +1029,49 @@ h2 {
   display: inline-block;
   width: 18px;
   height: 18px;
+  margin-right: 10px;
   background-color: tomato;
+
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+  background-color: blue;
 }
-.checkbox:checked + .icon {
-  background-color: var(--accent-color);
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox:checked + .icon-check {
+  border-color: orange;
+  background-color: orange;
+  background-image: url();
+  background-size: contain;
+  background-origin: border-box;
+}
+.checkbox:checked ~ .label {
+  display: flex;
+  align-items: center;
+  transform: translateX(20px);
 }
 .label {
-  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  transition: transform var(--animation-duration)
+    var(--animation-timing-function);
+}
+.field {
+  display: flex;
 }
 .group {
   margin-bottom: 20px;
