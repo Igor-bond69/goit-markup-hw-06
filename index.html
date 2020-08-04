@@ -518,12 +518,23 @@
         </div>
         <div class="subscription">
           <p class="mailing">Подпишитесь на рассылку</p>
-          <button class="but" type="submit">
-            Подписаться
-            <svg class="icon-send">
-              <use href="./images/sprite.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          <form>
+            <label class="subscription-form">
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="email-footer"
+              />
+
+              <button class="but" type="submit">
+                Подписаться
+                <svg class="icon-send">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
