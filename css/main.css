@@ -48,14 +48,19 @@ img {
 }
 
 .btn {
-  display: inline-block;
   position: absolute;
-  left: 248px;
+  left: 461px;
   margin-top: 30px;
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
   padding: 10px 32px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: white;
@@ -282,7 +287,6 @@ img {
 }
 
 .hero-title {
-  width: 696px;
   height: 120px;
   margin: 0;
   text-transform: uppercase;
@@ -960,16 +964,19 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 609px;
-  min-width: 450px;
+  min-height: 581px;
+  min-width: 528px;
   padding: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation-duration)
     var(--animation-timing-function);
 }
 .form {
-  width: 450px;
+  width: 528px;
   outline: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
@@ -1002,7 +1009,7 @@ h2 {
 }
 
 .form-input {
-  width: 370px;
+  width: 100%;
   margin: 0;
   padding: 10px 20px;
   border-radius: 3px;
@@ -1087,19 +1094,15 @@ h2 {
 }
 
 .group-title {
-  margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-bottom: 30px;
-  width: 370px;
-  height: 60px;
-  left: 199px;
-  top: 248px;
-  font-family: Roboto;
+  margin-top: 0;
+
+  width: 448px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
