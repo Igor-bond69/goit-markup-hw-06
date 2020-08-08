@@ -988,12 +988,6 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-.form-field input {
-  margin: 0;
-  padding: 10px 20px;
-  border-radius: 3px;
-  border: 1px solid #2a2a2a;
-}
 .form-field label {
   margin-bottom: 5px;
 }
@@ -1014,14 +1008,20 @@ h2 {
   padding: 10px 20px;
   border-radius: 3px;
   font: inherit;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #757575;
+  outline: 0;
 }
+
 .form-field:focus-within > .icon {
   background-color: var(--accent-color);
 }
 
 .form-field:focus-within > .form-label {
   transform: translate(-32px, -31px);
+  color: var(--accent-color);
+}
+.form-field:focus-within > .form-input {
+  border-color: var(--accent-color);
 }
 .form-input:not(:placeholder-shown) + .form-label {
   color: var(--accent-color);
@@ -1043,14 +1043,14 @@ h2 {
 
 .icon-check {
   display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
   background-color: tomato;
 
   border: 2px solid #2a2a2a;
   border-radius: 4px;
-  background-color: blue;
+  background-color: #ffffff;
 }
 .checkbox {
   /* -webkit-appearance: none;
@@ -1116,14 +1116,10 @@ h2 {
   margin: 0;
   padding: 0;
 }
-.topic-options input[type='checkbox'] {
-}
+
 .topic-options label {
   font-size: 20px;
   margin-left: 10px;
-}
-
-.experiens-options {
 }
 
 .date {
@@ -1132,7 +1128,21 @@ h2 {
   padding: 20px 40px;
 }
 .comment {
-  padding: 8px;
+  /* position: absolute;
+  left: 42px;
+  top: 12px;
+  transition: transform var(--animation-duration)
+    var(--animation-timing-function); */
+  height: 120px;
+  padding: 12px 16px 12px 16px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: #757575;
+  outline: 0;
+}
+.comment:focus {
+  border-color: var(--accent-color);
 }
 .subscription-form {
   display: flex;
