@@ -1013,20 +1013,36 @@ h2 {
 }
 
 .form-field:focus-within > .icon {
-  background-color: var(--accent-color);
+  fill: var(--accent-color);
+  cursor: pointer;
 }
-
+.close {
+  width: 30px;
+  height: 30px;
+  padding: 6px 6px 6px 6px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary-bg-color);
+}
 .form-field:focus-within > .form-label {
-  transform: translate(-32px, -31px);
+  transform: translate(-32px, -35px);
   color: var(--accent-color);
+  cursor: pointer;
 }
 .form-field:focus-within > .form-input {
   border-color: var(--accent-color);
+  cursor: pointer;
+}
+.form-field:focus-within > .comment-area {
+  transform: translateY(-35px);
+  color: var(--accent-color);
+  cursor: pointer;
 }
 .form-input:not(:placeholder-shown) + .form-label {
   color: var(--accent-color);
-  transform: translate(-32px, -31px);
+  transform: translate(-32px, -35px);
 }
+
 .icon {
   position: absolute;
   top: 50%;
@@ -1035,7 +1051,7 @@ h2 {
   width: 18px;
   height: 18px;
   transform: translateY(-50%);
-  background-color: tomato;
+  background-color: #ffffff;
 }
 /* .form-input:focus ~ .icon {
   background-color: #2196f3;
@@ -1128,11 +1144,6 @@ h2 {
   padding: 20px 40px;
 }
 .comment {
-  /* position: absolute;
-  left: 42px;
-  top: 12px;
-  transition: transform var(--animation-duration)
-    var(--animation-timing-function); */
   height: 120px;
   padding: 12px 16px 12px 16px;
   font-size: 14px;
@@ -1140,6 +1151,13 @@ h2 {
   letter-spacing: 0.01em;
   color: #757575;
   outline: 0;
+}
+.comment-area {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  transition: transform var(--animation-duration)
+    var(--animation-timing-function);
 }
 .comment:focus {
   border-color: var(--accent-color);

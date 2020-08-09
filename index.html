@@ -80,6 +80,11 @@
         <div class="backdrop is-hidden" data-backdrop="">
           <div class="modal">
             <form class="form js-speaker-form" autocomplete="off">
+              <button data-close-modal   class="close" href="">
+                <svg width="18" height="18">
+                  <use href="./images/sprite.svg#icon-close-black"</use>
+                </svg>
+              </button>
               <h2 class="group-title">
                 Оставьте свои данные, мы вам перезвоним
               </h2>
@@ -88,10 +93,11 @@
                   class="form-input"
                   type="text"
                   name="name"
-                  placeholder=" "
-                />
+                  placeholder=" "/>
                 <span class="form-label">Имя</span>
-                <span class="icon"></span>
+                  <svg class="icon">
+                  <use href="./images/sprite.svg#icon-person"></use>
+                  </svg>
               </label>
 
               <label class="form-field">
@@ -99,10 +105,11 @@
                   class="form-input"
                   type="tel"
                   name="tel"
-                  placeholder=" "
-                />
+                  placeholder=" "/>
                 <span class="form-label">Телефон</span>
-                <span class="icon"></span>
+                <svg class="icon">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
               </label>
 
               <label class="form-field">
@@ -111,11 +118,14 @@
                   class="form-input"
                   placeholder=" "/>
                 <span class="form-label">Почта</span>
-                <span class="icon"></span>
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#icon-email-black"></use>
+                  </svg>
               </label>
 
               <label class="form-field">
-                <textarea name="comment" cols="50" rows="10" plasholder=" " class="comment">Комментарий</textarea>
+                <textarea name="comment" cols="50" rows="10" plasholder=" " class="comment"></textarea>
+                <span class="comment-area">Комментарий</span>
               </label>
 
               <label class="field">
