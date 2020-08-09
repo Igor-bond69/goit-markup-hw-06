@@ -967,6 +967,7 @@ h2 {
   min-height: 581px;
   min-width: 528px;
   padding: 15px;
+  padding-bottom: 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1110,6 +1111,24 @@ h2 {
 .button-modal {
   width: 200px;
   padding: 10px 55px 10px 56px;
+  margin-left: 85px;
+  margin-right: 85px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--animation-duration)
+  var(--animation-timing-function);
+}
+
+}
+.button-modal:hover {
+background: #188CE8;
+
 }
 .checkbox:checked ~ .label {
   display: flex;
