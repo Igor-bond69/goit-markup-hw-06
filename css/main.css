@@ -978,7 +978,6 @@ h2 {
 .form {
   position: relative;
   width: 528px;
-  outline: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -1026,11 +1025,11 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--primary-bg-color);
+  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 .close:focus {
   fill: var(--accent-color);
   outline: 0;
-
   cursor: pointer;
 }
 .form-field:focus-within > .form-label {
@@ -1061,18 +1060,14 @@ h2 {
   height: 18px;
   transform: translateY(-50%);
   background-color: #ffffff;
+  transition: color var(--animation-duration) var(--animation-timing-function);
 }
-/* .form-input:focus ~ .icon {
-  background-color: #2196f3;
-} */
 
 .icon-check {
   display: inline-block;
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  background-color: tomato;
-
   border: 2px solid #2a2a2a;
   border-radius: 4px;
   background-color: #ffffff;
@@ -1091,9 +1086,9 @@ h2 {
   overflow: hidden;
 }
 .checkbox:checked + .icon-check {
-  border-color: orange;
-  background-color: orange;
-  background-image: url();
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
@@ -1107,12 +1102,12 @@ h2 {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
-
   transition: transform var(--animation-duration)
     var(--animation-timing-function);
 }
 .field {
   display: flex;
+  outline: 1px solid black;
 }
 .group {
   margin-bottom: 20px;
