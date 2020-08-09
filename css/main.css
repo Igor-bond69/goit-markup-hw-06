@@ -976,6 +976,7 @@ h2 {
     var(--animation-timing-function);
 }
 .form {
+  position: relative;
   width: 528px;
   outline: 1px solid tomato;
   margin-left: auto;
@@ -1017,12 +1018,20 @@ h2 {
   cursor: pointer;
 }
 .close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
   border-radius: 50%;
   background-color: var(--primary-bg-color);
+}
+.close:focus {
+  fill: var(--accent-color);
+  outline: 0;
+
+  cursor: pointer;
 }
 .form-field:focus-within > .form-label {
   transform: translate(-32px, -35px);
